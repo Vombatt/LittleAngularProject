@@ -1,3 +1,8 @@
-<p>
-  auth works!
-</p>
+<div class="container">
+  <div class="sign-in-form-container" [ngClass]="panelState"><div (click)="togglePanelState()"> переключить</div></div>
+  <div class="overlay" [ngClass]="panelState">
+    <div class="overlay-sign-in-content"></div>
+    <div class="overlay-sign-up-content"></div>
+  </div>
+  <div class="sign-in-form-container" [ngClass]="panelState"><div (click)="togglePanelState()"> переключить</div></div>
+</div>
